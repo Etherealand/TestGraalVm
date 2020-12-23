@@ -23,6 +23,8 @@ jobs:
 
       - name: Setup GraalVM CE
         uses: rinx/setup-graalvm-ce@v0.0.1
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
 
       # Runs a set of commands using the runners shell
       - name: TestGraalvm
